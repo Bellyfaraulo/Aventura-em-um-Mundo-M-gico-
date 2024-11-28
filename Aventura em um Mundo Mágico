@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Reino Mágico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Floresta com cachoeira ao fundo">
+            <p>Você encontra um pergaminho antigo que fala sobre o Reino Mágico. Para iniciar a jornada, escolha:</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o Norte</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o Sul</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você segue para o norte e encontra uma bifurcação. Qual caminho deseja seguir?</p>
+            <button class="btn-proximo" data-proximo="3">Esquerda</button>
+            <button class="btn-proximo" data-proximo="4">Direita</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Seguindo para o sul, você encontra uma praia deserta com pegadas misteriosas. Deseja seguir?</p>
+            <button class="btn-proximo" data-proximo="5">Seguir as pegadas</button>
+            <button class="btn-proximo" data-proximo="6">Retornar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No caminho da esquerda, você encontra uma caverna com enigmas na parede.</p>
+            <button class="btn-proximo" data-proximo="7">Resolver o enigma</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="Caminho para casa">
+            <p>Você decide voltar para casa, imaginando o que poderia ter descoberto.</p>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="Cidade mágica">
+            <p>Você encontrou o Reino Mágico, repleto de tesouros e mistérios!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
